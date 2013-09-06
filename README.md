@@ -12,7 +12,11 @@ One flip of a bit in the memory of an onboard computer appears to have caused th
 
 Finding defect RAM is a non trivial task, and can be done in hardware (e.g. ECC memory), software (e.g. [memtest86+](http://www.memtest.org/)) or a combination of both. Hardware tests do not find all errors, and conventional software tests require many hour long downtimes of the machines. Other software tests can run while the computer is in normal use, e.g. editing spreadsheets or serving webpages. These programs have a different problem: They just randomly poke around the computer memory, and often test only very small parts of the system memory.
 
-In my diploma thesis I developed an online memory test for the Linux kernel. This is a program (userspace & kernel module) that can test substantial (~70%, more with some programming) parts of the computers memory while the computer is in normal use, thus solving the biggest current problem with memory test. The code is available on [github](https://github.com/neuhalje/kernel-memtest).
+In my diploma thesis I developed an online memory test for the Linux kernel. This is a program (userspace & kernel module) that can test substantial (~70%, more with some programming) parts of the computers memory while the computer is in normal use, thus solving the biggest current problem with memory test. 
+
+### More?
+
+If you want to know more, then read my [blogpost](http://www.neuhalfen.name/2013/09/05/your-data-is-corrupted-and-you-dont-know-it/). If that still is not enough, read the [thesis](thesis).
 
 ## Content
 
@@ -20,8 +24,8 @@ In my diploma thesis I developed an online memory test for the Linux kernel. Thi
 
 The implementation has three major parts:
 
-* A [kernel module](physmem/kernel/module) that allows user space programs to request, and isolate specific page frames.
-* A userspace [implementation that drives the test](memtester/scheduler/src): It decides which frame to test when, and how.
+* A [kernel module](physmem/kernel/module/) that allows user space programs to request, and isolate specific page frames.
+* A userspace [implementation that drives the test](memtester/): It decides which frame to test when, and how.
 * Userpace implementations that implement the test algorithms to test a single page frame.
 
 Further there are some tools to analyse the memory management:
