@@ -10,7 +10,10 @@ Not only Google found this out: From the [NASA website](http://www.jpl.nasa.gov/
 One flip of a bit in the memory of an onboard computer appears to have caused the change in the science data pattern returning from Voyager 2, engineers at NASA’s Jet Propulsion Laboratory said Monday, May 17. A value in a single memory location was changed from a 0 to a 1. 
 </blockquote>
 
-Finding defect RAM is a non trivial task, and can be done in hardware (e.g. ECC memory), software (e.g. [memtest86+](http://www.memtest.org/)) or a combination of both. Hardware tests do not find all errors, and conventional software tests require many hour long downtimes of the machines. Other software tests can run while the computer is in normal use, e.g. editing spreadsheets or serving webpages. These programs have a different problem: They just randomly poke around the computer memory, and often test only very small parts of the system memory.
+
+### TL;DR
+
+Broken RAM is bad. Finding defect RAM is a non trivial task, and can be done in hardware (e.g. ECC memory), software (e.g. [memtest86+](http://www.memtest.org/)) or a combination of both. Hardware tests do not find all errors, and conventional software tests require many hour long downtimes of the machines. Other software tests can run while the computer is in normal use, e.g. editing spreadsheets or serving webpages. These programs have a different problem: They just randomly poke around the computer memory, and often test only very small parts of the system memory.
 
 In my diploma thesis I developed an online memory test for the Linux kernel. This is a program (userspace & kernel module) that can test substantial (~70%, more with some programming) parts of the computers memory while the computer is in normal use, thus solving the biggest current problem with memory test. 
 
