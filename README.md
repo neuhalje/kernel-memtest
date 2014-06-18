@@ -35,3 +35,8 @@ Further there are some tools to analyse the memory management:
 
 * [Analyze changes in the Linux source code](analyzing/mm-diff).
 * [Collect and visualize runtime behaviour of the Linux mm](analyzing/page_usage).
+* 
+
+## Further development
+Horst Schirmeier [greatly extended](https://github.com/schirmeier/rampage) the base laid by the thesis, e.g. by implementing the test algorithms in `C`, and by claiming more types of memory.
+
