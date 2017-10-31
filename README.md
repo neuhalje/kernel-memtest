@@ -5,7 +5,7 @@ Everything a computer does at some point involves RAM ("Memory"). Typical home c
 In mid 2009 Google and Bianca Schroeder from the University of Toronto published [a study](http://research.google.com/pubs/pub35162.html)  that showed that Google’s -- albeit commodity grade -- server hardware is prone to memory errors: *Each year a third of the studied systems suffered at least on correctable memory error (CE)*. According to their study, a system that had a CE in the past is very likely to have much more CEs or even uncorrectable errors (UE) in the near future.
 It is safe to assume, that consumer grade hardware is likely to show worse behaviour. These results emphasize the importance of the early detection of defective memory modules.
 
-Not only Google found this out: From the [NASA website](http://www.jpl.nasa.gov/news/news.php?release=2010-151), updated May 17, 2010 at 5:00 PT.
+Not only Google found this: From the [NASA website](http://www.jpl.nasa.gov/news/news.php?release=2010-151), updated May 17, 2010 at 5:00 PT.
 <blockquote>
 One flip of a bit in the memory of an onboard computer appears to have caused the change in the science data pattern returning from Voyager 2, engineers at NASA’s Jet Propulsion Laboratory said Monday, May 17. A value in a single memory location was changed from a 0 to a 1. 
 </blockquote>
@@ -19,7 +19,7 @@ In my diploma thesis I developed an online memory test for the Linux kernel. Thi
 
 ### More?
 
-If you want to know more, then read my [blogpost](http://www.neuhalfen.name/2013/09/05/your-data-is-corrupted-and-you-dont-know-it/). If that still is not enough, read the [thesis](thesis).
+If you want to know more, then read my [blogpost](http://www.neuhalfen.name/2013/09/05/your-data-is-corrupted-and-you-dont-know-it/). If that still is not enough, read the [thesis](thesis) or read the [paper](http://danceos.org/publications/PRDC-2011-Schirmeier.pdf) based on my thesis.
 
 ## Content
 
